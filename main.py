@@ -12,8 +12,15 @@ def main():
                                          #to change read book change frankenstein.txt to other book.txt
     text = get_book_text(book_path) # text is filed by opening the file in book_path from the get_book_text function below
     print(text)
+    num_words = get_num_words(text)
+    print(num_words)
+
 def get_book_text(path):
     with open(path) as f: # path is set to book_path in main
         return f.read()
+
+def get_num_words(book_string):
+    words = book_string.split()
+    return len(words)
 
 main()

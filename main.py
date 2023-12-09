@@ -59,33 +59,6 @@ def get_letters(characters_to_check):
     characters = characters_to_check.lower()
     for char, number in temp_char.items():
         temp_char[char] = characters.count(char)
-    a = characters.count("a")
-    b = characters.count("b")
-    c = characters.count("c")
-    d = characters.count("d")
-    e = characters.count("e")
-    f = characters.count("f")
-    g = characters.count("g")
-    h = characters.count("h")
-    i = characters.count("i")
-    j = characters.count("j")
-    k = characters.count("k")
-    l = characters.count("l")
-    m = characters.count("m")
-    n = characters.count("n")
-    o = characters.count("o")
-    p = characters.count("p")
-    q = characters.count("q")
-    r = characters.count("r")
-    s = characters.count("s")
-    t = characters.count("t")
-    u = characters.count("u")
-    v = characters.count("v")
-    w = characters.count("w")
-    x = characters.count("x")
-    y = characters.count("y")
-    z = characters.count("z")
-    collected_letters = {"a":a,"b":b,"c":c,"d":d,"e":e,"f":f,"g":g,"h":h,"i":i,"j":j,"k":k,"l":l,"m":m,"n":n,"o":o,"p":p,"q":q,"r":r,"s":s,"t":t,"u":u,"v":v,"w":w,"x":x,"y":y,"z":z}
     return temp_char
     #for char in characters:
 

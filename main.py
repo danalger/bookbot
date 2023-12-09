@@ -27,8 +27,38 @@ def get_num_words(book_string): # book_string is set to text in main this is the
     return len(words)
 
 def get_letters(characters_to_check):
-    temp_char = []
+    temp_char = {'a':0,
+                 'b':0,
+                 'c':0,
+                 'd':0,
+                 'e':0,
+                 'f':0,
+                 'g':0,
+                 'h':0,
+                 'i':0,
+                 'j':0,
+                 'k':0,
+                 'l':0,
+                 'm':0,
+                 'k':0,
+                 'l':0,
+                 'm':0,
+                 'n':0,
+                 'o':0,
+                 'p':0,
+                 'q':0,
+                 'r':0,
+                 's':0,
+                 't':0,
+                 'u':0,
+                 'v':0,
+                 'w':0,
+                 'x':0,
+                 'y':0,
+                 'z':0}
     characters = characters_to_check.lower()
+    for char, number in temp_char.items():
+        temp_char[char] = characters.count(char)
     a = characters.count("a")
     b = characters.count("b")
     c = characters.count("c")
@@ -56,7 +86,7 @@ def get_letters(characters_to_check):
     y = characters.count("y")
     z = characters.count("z")
     collected_letters = {"a":a,"b":b,"c":c,"d":d,"e":e,"f":f,"g":g,"h":h,"i":i,"j":j,"k":k,"l":l,"m":m,"n":n,"o":o,"p":p,"q":q,"r":r,"s":s,"t":t,"u":u,"v":v,"w":w,"x":x,"y":y,"z":z}
-    return collected_letters
+    return temp_char
     #for char in characters:
 
 main()

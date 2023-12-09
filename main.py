@@ -14,15 +14,10 @@ def main():
     text = get_book_text(book_path) # text is filed by opening the file in book_path from the get_book_text function below
     print(text)
     num_words = get_num_words(text)
-    #print(f'The number of words in this book is {num_words}.')
     letters = get_letters(text)
-    #print(letters)
-    #temp_list = dict.items(letters)
     sorted_letters = letters_dict_to_sorted_list(letters)
-    #print(sorted_letters)
     print(f'--- Begin report of {book_path} ---')
     print(f'The number of words in this book is {num_words}.\n\n')
-    #print(dict.items(letters))
     for let in sorted_letters:
         print(f'The "{let["letter"]}" letter was found {let["num"]} times') 
     print(f'\n ---End Report---')

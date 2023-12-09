@@ -26,7 +26,7 @@ def get_num_words(book_string): # book_string is set to text in main this is the
     words = book_string.split() 
     return len(words)
 
-def get_letters(characters_to_check):
+def get_letters(characters_to_check): # characters_to_check is set to text in main this is the data read from the path as a text string
     temp_char = {'a':0,
                  'b':0,
                  'c':0,
@@ -58,8 +58,8 @@ def get_letters(characters_to_check):
                  'z':0}
     characters = characters_to_check.lower()
     for char, number in temp_char.items():
-        temp_char[char] = characters.count(char)
+        temp_char[char] = characters.count(char) # updates the value for each key item in temp_char ie key "a" value of 0 should change to number of "a" in text 
     return temp_char
-    #for char in characters:
+    
 
 main()

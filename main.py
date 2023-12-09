@@ -1,12 +1,4 @@
-#print("Hello World")
-# Book needs to be a txt file do not use pdf
-# with open("books/frankenstein.txt") as f:
-#    file_contents = f.read()
 #
-#print(file_contents)
-# Above this line is original code for project where everything is hard coded
-# 
-# Below this line is code to use the program with variables
 # Code does not verify that the file read is a txt string at the moment.  Code will error if other types of files are inputted
 def main():
     book_path = 'books/frankenstein.txt' #book to be read needs to be in the books directory where the file is run
